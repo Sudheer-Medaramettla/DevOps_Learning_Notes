@@ -1,0 +1,750 @@
+           DevOps Interview Questions
+Some core topics to focus on:
+
+ • Linux fundamentals
+ • Networking basics
+ • Git & version control
+ • Shell scripting
+ • CI/CD pipelines
+ • Containers (Docker)
+ • Kubernetes
+ • Cloud basics (AWS / Azure)
+ • Infrastructure as Code (Terraform)
+ • Monitoring & logging
+
+Strong basics + good documentation + hands-on practice = real DevOps skills.
+
+
+
+
+
+
+
+*Difference between Agile & DevOps:
+
+ 
+🔥 Agile Builds It. DevOps Runs It.
+Agile focuses on how software is built.
+DevOps focuses on how software is delivered and run.
+⚡ Agile
+Emphasizes planning, coding, and testing
+Works in short sprints
+Goal: Faster development & better collaboration
+🔁 DevOps
+Extends Agile beyond development
+Focuses on CI/CD, automation, monitoring
+Goal: Faster, reliable, continuous delivery
+🎯 Key Difference
+Agile ends at “Done”.
+DevOps starts at “Done” and continues to production.
+💡 Best practice:
+Agile + DevOps together = Fast development + Stable releases
+
+
+
+
+
+*DevOps Lifecycle:
+
+ 
+🔥 DevOps on AWS: From Code to Cloud (One Flow)
+DevOps is not about learning more tools —
+it’s about understanding the end-to-end flow.
+On AWS, every stage of the DevOps lifecycle is clearly mapped 👇
+📝 Plan → Jira
+🧑‍💻 Source Code → CodeCommit / GitHub
+🏗️ Build → CodeBuild
+🔁 CI/CD → CodePipeline, CodeDeploy, Jenkins
+☁️ Infrastructure as Code → CloudFormation, Terraform, CDK
+🐳 Containers & Orchestration → Docker, ECR, EKS
+📊 Monitoring & Logging → CloudWatch, X-Ray
+🔐 Security & Secrets → IAM, Secrets Manager, KMS
+💡 Key Insight
+Once you understand the DevOps flow, tools become interchangeable.
+That’s what makes a real DevOps engineer.
+
+ 
+*DevOps & DevSecOps:
+
+ 
+DevOps vs DevSecOps 🚀🔐
+
+DevOps is a set of practices and tools that unifies development and operations to enable faster, automated, and reliable software delivery across the CI/CD pipeline.
+
+DevSecOps extends DevOps by embedding security at every stage of the SDLC — from design and code to build, test, deploy, and monitor — using automated security controls and continuous validation.
+
+👉 DevOps = Speed + Collaboration
+👉 DevSecOps = Speed + Collaboration + Security
+*Cloud Computing (AWS, Azure, GCP):
+
+ 
+ 
+ 
+*Based on Technology Interview Questions:
+1.Cloud – AWS
+2. Git & GitHub
+3.CICD Pipelines
+4.Docker
+5.Kubernetes
+6.Terraform.
+7.Ansible
+8.Scripting -Python & Shell.
+9. Linux
+10.Networking.
+11.SRE & Observability.
+12.DevOps AI.
+*Cloud-AWS:
+1. Explain your VPC design across AZs and NAT/IGW routing.
+2. How do you troubleshoot sudden spikes in 5xx errors in production?
+3. How do you implement centralized logging using CloudWatch / ELK / OpenSearch?
+4. Explain the difference between EC2, ECS, and EKS. When would you use each?
+5. Difference between Security Groups and NACLs.
+6. How does IAM role differ from IAM user?
+7. What happens if an EC2 instance is stopped vs terminated?
+8. Difference between ALB, NLB, and CLB.
+9. How does Auto Scaling work with ALB?
+10. What is VPC peering and its limitations?
+11. Difference between S3 and EBS.
+12. How many organizations are using AWS Lambda instead of EC2, and in which scenarios would you prefer Lambda over EC2? 
+13. Have you worked with AWS Lambda functions? How did you use them in your projects?
+14. In the OSI model, where do ALB and NLB operate?
+15. What is an Amazon S3 bucket?
+16. What is a VPC?
+17. Difference between public and private subnets.
+18. What is an EC2 instance, and how do you troubleshoot EC2 issues?
+19. How can you access private instances inside a VPC?
+20. How do you SSH into an EC2 instance using your key?
+21. Explain Security Groups vs Network ACLs.
+22. How can you block an IP using only Security Groups?
+23. How do you design a highly available architecture across Multi-AZ & Multi-Region?
+24. Share a real scenario where Auto Scaling didn’t scale properly — what was the root cause?
+25. How do you secure cross-account access using IAM roles?
+26. You have 100+ microservices on ECS/EKS — how do you manage deployments and rollbacks?
+27. What metrics do you monitor for EC2, ECS, and RDS in CloudWatch?
+28. How do you implement centralized logging for microservices?
+29. Describe an incident where an EC2 instance crashed — what did you do?
+30. How do you implement secret rotation (Secrets Manager / Parameter Store)?
+31. The service is slow — how do you debug AWS performance issues?
+32. How do you optimize AWS cost (EC2, NAT Gateway, S3)?
+33. What is your DR & Backup strategy for production workloads?
+34. Describe your IaC strategy using Terraform or CloudFormation.
+35. How do you handle RDS Multi-AZ failover?
+36. Difference between EC2 and Lambda?
+37. What is Auto Scaling in AWS?
+38. What is IAM and why is it important?
+39. Difference between IAM Role and IAM User?
+40. What is S3 and common use cases?
+41. Difference between public and private S3 buckets?
+42. What is Load Balancer and Types of Load balancers?
+
+43. Difference between ALB and NLB?
+44. What is VPC in AWS?
+45. Difference between public and private subnet?
+46. What is Security Group?
+47. Difference between Security Group and NACL?
+48. What is DNS and why do we use it?
+49. What is Route 53?
+50. What is CloudWatch?
+51. What is an AMI?
+52. What is CIDR and how to calculate Ips?
+53. What is an Internet Gateway?
+54. Public EC2 vs Private EC2?
+55.
+
+ *CICD Pipelines:
+1. Explain your CI/CD pipeline architecture end-to-end. How do you ensure zero-downtime deployments?
+2. How do you design multi-branch workflows for microservices in CI/CD?
+3. Blue-Green vs Rolling vs Canary - when to choose what and why?
+4. How do you secure CI/CD pipelines from credential leaks & supply-chain attacks?
+5. How do you troubleshoot and reduce flaky pipeline failures?
+6. A production pipeline deployment failed — walk through your troubleshooting steps.
+7. Explain your CI/CD pipeline architecture (CodePipeline / Jenkins / GitHub Actions).
+
+Git:
+1.	What is the difference between git merge and git rebase?
+2.	How do you resolve merge conflicts?
+3.	Git vs GitHub – what’s the difference?
+4.	What is a Git branch and why do we use it?
+
+GitHub Actions:
+1.	How does a GitHub Actions workflow get triggered?
+2.	Explain the structure of a GitHub Actions YAML file.
+GitLab CI/CD:
+1.	Difference between GitHub Actions and GitLab CI/CD?
+2.	What are stages and jobs in GitLab pipelines?
+3.	Explain the structure of a .gitlab-ci.yml file.
+4.	What are stages, jobs, and pipelines in GitLab?
+5.	Difference between artifacts and cache in GitLab.
+6.	How do GitLab runners work?
+7.	What is a protected branch and protected variable?
+8.	How do you trigger pipelines manually in GitLab
+
+*Git & GitHub:
+1. Explain GitFlow vs Trunk-Based Development. Which one do product companies prefer & why?
+2. How do you debug production issues using Git bisect?
+3. How do you enforce quality checks and approvals before merging?
+*Jenkins:
+1. How do you run multiple jobs in Jenkins?
+2. What are the different ways to run and build pipelines? Explain Poll SCM and Webhooks.
+3. Your Jenkins pipeline failed because the artifact is not accessible due to credential issues. What could be the possible reasons?
+4. What is the default port of Jenkins?
+5. How do you secure your Jenkins server?
+6. Explain your CI/CD pipeline and how you optimize it.
+7. How do you store secret keys in a pipeline securely?
+8. What is Jenkins and why is it used?
+9. What is a Jenkins pipeline?
+10. Difference between freestyle job and pipeline?
+11. What is a build artifact?
+*AzureDevOps CICD Tool:
+1. Create an Azure Pipeline YAML file.
+*Maven:
+1. How do you build a CI pipeline?
+2. What are the different technologies you use in a CI pipeline?
+3. How do you authenticate Maven with a pipeline?
+4. How do you manage your dependencies using Maven?
+5. What does mvn clean install or mvn package command do
+ 
+*Sonar Cube:
+1. How is SonarQube used, and how did you attach it to your CI/CD pipeline?
+2. How do you use it in your project?
+
+*Docker:
+1. Explain Docker and its use cases.
+2. Describe the Docker workflow.
+3. Common Docker file instructions and their purpose
+4. How do you reduce Docker image size and improve build time?
+5. What are multi-stage builds and when do you use them?
+6. How do you troubleshoot container crashes (OOM, CPU spike, segfault)?
+7. Difference between Docker image and container.
+8. What is a multi-stage Docker build and why is it used?
+9. How do you reduce the size of a Docker image?
+10. Difference between Dockerfile COPY and ADD & CMD and ENTRYPOINT.
+11.What is Docker Compose?
+12. How do you reduce or reuse Docker image size?
+13. Write a Docker Compose file.
+14. After building the Docker image, have you used any image scanning tool?
+ Which one did you use?
+
+*Kubernetes:
+1.Have you worked on monolithic or microservices architecture?
+2. How do you perform rollback, and what steps do you follow from microservices?
+2. Explain your production-grade Kubernetes architecture.
+3. How do you troubleshoot CrashLoopBackOff and ImagePullBackOff?
+4. What happens when readiness/liveness probes fail?
+5. How do you implement autoscaling (HPA/VPA/Cluster Autoscaler)?
+6. How do you manage secrets securely in Kubernetes (Vault / Sealed Secrets)?
+7. Difference between Deployment, StatefulSet, and DaemonSet.
+8. How does Kubernetes perform rolling updates?
+9. How does Kubernetes handle pod restarts and failures?
+10. What happens when a node goes into NotReady state?
+11. Difference between Cluster IP, Node Port, and Load Balancer services.
+12. How do liveness and readiness probes work?
+13. What is the purpose of ConfigMaps and Secrets?
+14. How does Horizontal Pod Autoscaler work internally?
+15. Difference between Ingress and Service.
+16. What is the use of namespaces in Kubernetes?
+17. How do you troubleshoot a pod stuck in CrashLoopBackOff?
+18. Can you write a Kubernetes manifest file for a Horizontal Pod Autoscaler (HPA)?
+19. What is the node scale-up and scale-down time? How do you define minimum and maximum nodes?
+20. How did you design a secure Amazon EKS cluster architecture?
+21. What is a DaemonSet and where is it used?
+22. What are taints and tolerations in Kubernetes?
+23. What does an Ingress controller do?
+24. Explain Common Kubernetes pod errors.
+25. How would you deploy a three-tier application in Kubernetes?
+26. How do you debug a production issue when logs show no errors?
+27. What steps do you follow when application latency suddenly increases?
+28. How do you identify the root cause when metrics look normal but users complain?
+29. What do you check first when a Kubernetes pod is running but traffic fails?
+30. How do you troubleshoot intermittent failures that can’t be reproduced?
+31. How do you verify whether a deployment actually changed runtime behavior?
+32. When does a Kubernetes node go into NotReady state?
+33. What do you analyze when database connections are exhausted but CPU is low?
+34. How do you approach an incident involving multiple dependent services?
+35. What signals do you trust most during a live production outage?
+36. How do you confirm whether autoscaling is working as expected?
+37. How do you debug a pipeline that succeeds but produces a faulty release?
+38. What would you investigate if a rollback doesn’t resolve the issue?
+39. How do you detect configuration drift in production systems?
+40. What checks do you perform before declaring an incident resolved?
+41. How do you prioritize actions during a high-severity outage?
+42. What deployment strategies are you implementing in Kubernetes?
+43. What are the modern differences between probes in Kubernetes?
+44. What are taints and tolerations, and when will you apply them?
+45. What is a node Selector?
+46. How can you disable scheduling on a Kubernetes node?
+47. What are finalizers in Kubernetes?
+48. What is KEDA?
+49. What are the autoscaling options in Kubernetes? (HPA, VPA, CA)
+50. What is the difference between HPA and VPA?
+51. What are resource requests and limits, and why do we use them?
+52. Explain Blue-Green vs Canary deployments with real examples.
+
+*Terraform:
+1. What is the Terraform state file?
+2. Difference between terraform plan and terraform apply.
+3. How do you structure Terraform for multi-environment deployments (dev/stage/prod)?
+4. What happens internally during terraform plan & apply?
+5. How do you resolve state locking issues or partial apply failures?
+6. How do you detect and fix drift in Terraform-managed infrastructure?
+7. How do you design reusable Terraform modules for microservices?
+8. How do you structure Terraform for multi-environment deployments (dev/stage/prod)?
+9. What happens internally during terraform plan & apply?
+10. How do you resolve state locking issues or partial apply failures?
+11. How do you detect and fix drift in Terraform-managed infrastructure?
+11. How do you design reusable Terraform modules for microservices?
+12. Can you write a Terraform module for creating a VPC?
+13. What is a Terraform state file and why is it important?
+14. How do you secure .env files in Terraform?
+15. What is Terraform and how is it used in IaC?
+16. What is Terraform?
+17. What is the purpose of backend.tf?
+
+*SRE & Observability:
+1. How do you define SLIs/SLOs and prevent production incidents?
+2. Share a real production outage — what did you learn?
+
+*Bash Scripting:
+
+1. Write a bash script to find the top 5 largest files in a directory and display their size.
+2. Write a Bash script to create and write log files in the current directory.
+
+*Python scripting:
+1. Write a Python script to read a log file and count how many times the word “ERROR” appears.
+2.How would you write a Python script to monitor system performance (CPU, RAM, Disk)?
+3.How do you automate failure notifications (Slack/Email) with Python?
+4.Write a Python script to check Kubernetes pod status
+5.Create a Python script that validates SSL certificate expiry.
+6.Write a Python script to compare two config files and show differences.
+7.write a python script to add two numbers.
+
+AI-ML-DevOps:
+1.	Discuss how AI agents are important in modern technology.
+
+*Linux:
+1. What command is used to list all listening ports in Linux?
+2. How do you check which process is using the most CPU or memory?
+3. Command to generate an SSH key?
+4. Name some popular Linux distributions.
+5. What is a cron job?
+6. What is bash scripting?
+7. What is a package manager in Linux?
+8. What is systemd?
+
+*Automation:
+1. Explain a detailed automation use case you implemented.
+2. What scripting do you use (Python, PowerShell), and what scenarios have you automated?
+*Kubernetes Real Time scenarios:
+🚨 Advanced Kubernetes Interview Questions (Production Level)
+If you’re preparing for senior DevOps / Kubernetes interviews,
+These are the questions that matter 👇
+❓ 1. Pod keeps restarting but logs look fine. What do you check next?
+
+✔ Events (kubectl describe pod)
+✔ OOMKilled (memory limit exceeded)
+✔ Liveness probe misconfiguration
+✔ Node pressure (CPU / Disk / Memory)
+
+❓ 2. Difference between Requests, Limits, and QoS Classes?
+✔ Requests → Scheduling decision
+✔ Limits → Maximum allowed usage
+✔ QoS:
+Guaranteed → request = limit
+Burstable → request < limit
+BestEffort → no requests/limits
+
+❓ 3. How do you handle traffic spikes in production?
+✔ HPA (CPU / memory / custom metrics)
+✔ Proper requests & limits
+✔ Cluster Autoscaler
+✔ Cache + rate limiting at ingress
+
+❓ 4. How do you deploy without downtime?
+✔ Readiness probes
+✔ Rolling updates with maxSurge
+✔ Blue-Green or Canary deployments
+✔ Fast rollback strategy
+
+❓ 5. How do you secure a Kubernetes cluster?
+✔ RBAC (least privilege)
+✔ Pod Security Standards
+✔ Network Policies (zero-trust)
+✔ Image scanning (Trivy)
+✔ Secrets encryption at rest
+
+❓ 6. How do you debug networking issues?
+✔ Service vs Pod IP
+✔ DNS resolution
+✔ Network Policies
+✔ CNI plugin logs (Calico / Cilium)
+
+❓ 7. What’s your GitOps strategy?
+✔ Git = source of truth
+✔ ArgoCD / Flux
+✔ PR-based deployments
+✔ Rollbacks via Git history
+---------------------------------------------------------------------------------------------
+🧠 Interview Reality
+I once asked this in an Kubernetes engineer interview.
+
+Q: You deleted a deployment, but the pods are still running. How?
+
+A: The associated ReplicaSet wouldn't have been deleted. If the Deployment was paused or not cleaned up properly, the ReplicaSet would continue maintaining the pods.
+
+Q: A pod with no memory limit defined is still getting OOMKilled. What could be the reason?
+
+A: Without a memory limit, the pod gets BestEffort QoS and can overconsume node memory. If the node runs out, the kubelet OOMKills such pods first to reclaim memory.
+
+Q: A HPA is in place, but even under load, replicas remain at 1. What could cause this?
+
+A: The metrics server might not be reporting CPU or memory usage properly. Without metric data, the HPA controller would not initiate any scale out actions.
+
+Q: A Deployment was rolled out, but pods are not created. What should be checked first?
+
+A: The Deployment might have failed admission due to validation or mutation webhooks. Events or kubectl describe would show webhook related errors that blocked pod creation.
+
+Q: You exposed a pod via NodePort, but it's still unreachable externally. What’s likely missing?
+
+A: The node level firewall or cloud NACL might be blocking the assigned port. Even though Kubernetes exposes it, the OS would still drop the traffic if not allowed.
+
+Q: A container image is updated in the registry, but pods are still pulling the old image. Why?
+
+A: The deployment might be using an immutable image digest or relying on the default imagePullPolicy: IfNotPresent. In that case, existing nodes would cache the image and avoid pulling the new version.
+
+Q: You use emptyDir for temporary data, but after a pod restart, all the data is gone. Why?
+
+A: That’s expected. emptyDir would be wiped whenever the pod is terminated or rescheduled since it’s tied to the pod lifecycle.
+
+What is covered:
+DevSecOps, Cloud, Containerization, IaC, GitOps, MLOps
+
+
+
+
+*Kubernetes Notes:
+🐳 Docker vs ☸️ Kubernetes — Easy Explanation for Beginners
+Many beginners think Docker and Kubernetes are the same.
+They are related — but they do different jobs.
+Let’s understand this using the image 👇
+🐳 Docker (Container Platform)
+Docker helps you create and run containers.
+
+What Docker does:
+✔ Packages your app code + dependencies
+✔ Uses a Dockerfile to build an image
+✔ Runs containers on a single host
+✔ Perfect for development & small setups
+
+👉 Think of Docker as:
+
+“Run my application inside a container”
+☸️ Kubernetes (Container Orchestration Platform)
+Kubernetes manages many containers at scale.
+
+What Kubernetes does:
+✔ Runs containers across multiple machines (nodes)
+✔ Automatically handles scaling & self-healing
+✔ Manages pods, services, and networking
+✔ Best for production environments
+
+👉 Think of Kubernetes as:
+“Manage thousands of containers automatically”
+
+🔁 How They Work Together
+ • Docker builds containers
+ • Kubernetes runs and manages those containers
+They are not competitors — they work together.
+
+🧠 Easy One-Line Summary
+ • Docker = Create & run containers
+ • Kubernetes = Manage containers at scale
+
+📌 This image shows the real-life flow from app code → running application.
+ 
+ 
+*Kubernetes Common Errors:
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CICD Notes:
+End-to-End CI/CD Pipeline on AWS | Production-Grade DevOps Architecture
+
+Modern software delivery demands speed, reliability, and automation.
+This architecture showcases a real-world, production-ready CI/CD pipeline where both infrastructure and application deployments are fully automated using industry-standard tools.
+
+🔁 CI/CD Workflow Overview
+
+👨‍💻 1. Code Commit
+Developers push code to GitHub / GitLab, triggering the pipeline automatically via webhooks.
+
+⚙️ 2. Jenkins CI/CD
+Jenkins orchestrates the pipeline:
+✔️ Source code checkout
+✔️ Build & automated testing
+✔️ Docker image creation
+✔️ Deployment to Kubernetes
+
+🏗️ 3. Infrastructure as Code (Terraform)
+Terraform provisions and manages AWS infrastructure:
+• VPC & networking
+• Amazon EKS cluster
+• IAM roles & policies
+• Application Load Balancer (ALB)
+All infrastructure is version-controlled, repeatable, and scalable.
+
+🚢 4. Application Deployment on Amazon EKS
+The application is deployed as Kubernetes workloads:
+• Frontend Pods
+• Backend Pods
+• ALB Ingress for external traffic
+
+🗄️ 5. Data Layer
+Application integrates securely with:
+• Amazon RDS
+• Amazon DynamoDB
+
+📊 6. Monitoring, Logging & Alerts
+End-to-end observability using:
+• Prometheus 📈 (metrics)
+• Grafana 📊 (visual dashboards)
+• CloudWatch 🔍 (logs & alarms)
+• Notifications via SNS / Slack / Email 🔔
+ 
+
+*CICD Pipeline workflow:
+
+ 
+End-to-End CI/CD Pipeline with Docker, Kubernetes & Canary Deployment. 
+
+🚀 CI/CD Pipeline Explained – Real-World DevOps Workflow
+
+Sharing a production-grade CI/CD pipeline that reflects how modern DevOps teams deploy applications safely and efficiently 👇
+
+🔹 Flow Overview:
+1️⃣ Developer pushes code → GitHub (PR & Merge)
+2️⃣ CI triggered using GitHub Actions
+3️⃣ SonarQube performs code quality & security checks
+4️⃣ If quality gate ❌ fails → pipeline stops
+5️⃣ If ✅ passes → Docker image is built
+6️⃣ Image pushed to Docker Hub
+7️⃣ Deployment happens in Staging Environment
+8️⃣ Kubernetes runs v1 (old) and v2 (new) versions
+9️⃣ Canary Deployment using Argo Rollouts
+ • 90% traffic → v1
+ • 10% traffic → v2
+🔟 Monitoring & metrics using Grafana
+
+🎯 Why this pipeline matters:
+✔ Zero-downtime deployments
+✔ Safe rollout of new features
+✔ Quick rollback on failures
+✔ Automated quality & security checks
+✔ Industry-standard DevOps practices
+
+📌 This architecture is commonly used with AWS EKS / GKE / AKS in real production environments.
+
+*CICD WorkFlow:
+
+ 
+🚀 End-to-End DevSecOps CI/CD Pipeline on AWS EKS | Jenkins, Docker & Kubernetes
+
+I designed and implemented a complete DevSecOps CI/CD pipeline to deploy a real-world 2048 game application on AWS EKS, automating everything from code checkout to secure Kubernetes deployment.
+This project showcases how modern cloud-native applications are built, secured, and deployed using industry-standard DevOps & security tools.
+🔧 Tech Stack & Tools
+ • Cloud: AWS EC2, IAM, S3, EKS
+ • CI/CD: Jenkins (Pipeline as Code)
+ • IaC: Terraform
+ • Containerization: Docker, Docker Scout
+ • Security: SonarQube, OWASP Dependency-Check, Trivy
+ • Orchestration: Kubernetes (kubectl)
+ • Runtime: Java, Node.js, NPM
+🔄 CI/CD Flow:
+GitHub → Jenkins → SonarQube → OWASP → Trivy FS Scan → Docker Build & Push → Trivy Image Scan → AWS EKS → 🎮 2048 Game Live
+
+🎯 Key Takeaways:
+✔ End-to-end CI/CD automation
+✔ Secure DevSecOps implementation
+✔ Infrastructure provisioning with Terraform
+✔ Production-style Kubernetes deployment
+✔ Strong hands-on cloud & DevOps experience
+*Linux File system:
+
+ 
+
+Roles & Responsibilities Highlighted points:
+ 
+*Domains: Finance, payments, sales and Stock and trading, health care related domains
+*Application Types: Web based Applications, Saas based Applications, SAP ERP Enterprise Applications.
+*Platforms: I worked on different platforms like Application support, infra support, SRE & Observability Monitoring roles.
+*ITIL Frameworks: Incident Mgt, Change Mgt, Event & Major incident managements.
+*Monitoring Tools: Datadog, Dynatrace, Splunk, OMI, Grafana, Kibana, SiteScope Etc.
+*Performed & Involved: Application Deployments & Release activates across multiple environments like PROD, PRE-PROD, UAT, QC.
+*Day-to-day Activities:
+ 
+	In My Previous organization i worked as a Applications support Engineer L3
+	Because we have supported external projects, we got chance to support multiple domains like Apps support, infra support, Monitoring support.
+	I worked on different domains like finance, payroll, payments, sales related domains
+	We have supported almost 100+ Applications, and all are Web based, saas based and SAP ERP Enterprise Applications.
+	And these Applications are completely B2B Applications which we have been hosted on different platforms like Windows & Linux platforms.
+	We are handling global customers like Apac, EMEA & AMS and we are supporting Applications in 24/7 Environment
+	When customers are facing any technical issues or if they need any technical assistance, they reach out to us for technical assistance
+	As a operations engineer we need to ack those issues we need to mitigate and resolve the issue within the business impact
+	We are mainly following ITIL process. We are working under incident management we are handling user tickets and Auto Tickets with different priorities like P1, P2, P3, P4 based on urgency, criticality, impact will act accordingly to avoid user impact and business impact.
+	Along with this we are frequently involved in change management and Major incident management, during change management we will take care of Applications Deployments, release activities and whenever there is a outage from Applications we will initiate bridge calls and will engage with different stakeholders to resolve the issues.
+	Along with that we do have experience on working APM monitoring tools like Datadog, Splunk, Grafana, Kibana, SiteScope Etc.
+
+SRE Observability Real Time scenario 1: 
+Most challenging issue / P1 Incident / Most critical issue:
+ Problem: Application down is down and getting 500 errors none of the users cannot login to the Application.
+ Troubleshooting Steps: 
+1. We have one of the Application names called: Sisense. This Application is finance-based Application.
+2. This Application is gone down and none of the end users cannot access across global locations
+3. Our L1 team has escalated the issue to us (L2), Post we have started performing Application Health check.
+4. While performing health checks we have encountered few URLs are not loaded which are associated with Application we have seen 500 server Error.
+5. Then I started performing troubleshooting like validated servers are Up OR NOT and servers are healthy or not.
+6. As we check server is UP and server is healthy like CPU, MEMORY & Disk space under below utilization.
+7. post i have performed services restart, but still there is no luck again we have performed App Pool recycles in IIS server manager
+8. Still i haven't seen Application back to normal, hence finally i performed IISRESET but still application not came back to normal.
+9. post i have asked MIM Team to initiate a bridge call and i have engaged with backend team i have shared all the inputs whatever i have performed from my end.
+10. L3 Team has checked and confirmed that mango DB services have gone down from DB servers 
+11. post restarting Mongo DB servers, Application back to the Normal.
+ 
+Root cause: Here we have asked Event monitoring team to configure alerts for those Mango DB services whenever it went down it should trigger alert.
+
+*Real Time scenario 2: 
+Problem: There are high backpressure errors on Across multiple Applications
+Impact: Customers are unable to perform payments under payments Application.
+Errors: Backpressure errors on Kubernetes services. 
+Triaging/ Troubleshooting: 
+1. We have received alert for transaction success rate has dropped from the Application.
+2. We have ack the alert and started triaging the alert we have seen almost 1K errors and all are non-Retryable Errors
+3. We observed complete system success rate, Error rate, transaction success rate, Error rate has increased, and success rate has dropped
+4. We have collected all the Errors and trace id, span id etc. in Grafana monitoring tool and collected logs in Kibana tool.
+5. We have escalated to Developers and on-call person while sharing those inputs, but there is no response from Dev Team and errors are increasing more from Application.
+6. We have initiated a bridge and pulled all the stakeholders into the call and troubleshooted together to resolve the issue.
+7. During the troubleshooting we have encountered the issue like Due to weekend deployment from Kubernetes issues has persisting
+8. we have engaged with DevOps team and they troubleshooted the issue they found due to recent deployment issue, and they have Roll back the Deployment post issue got resolved.
+ 
+Resolution: Rollback has been initiated for the deployment and later back pressure errors are decreasing, and customers are able to perform transactions.
+
+-----------------------------------------------------------------------------------
+*HTTP client errors:
+
+1. HTTP Error Codes (Frontend, Backend, API, ALB, Nginx, Apache)
+
+1xx – Informational
+* 100 Continue → Client continues sending request (normal handshake).
+* 101 Switching Protocols → WebSockets / HTTP2 upgrade happening.
+
+2xx – Success
+* 200 OK → Request successful.
+* 201 Created → Resource created (POST).
+* 204 No Content → Successful but no body returned.
+
+3xx – Redirect
+* 301 Moved Permanently → URL changed.
+* 302 Found → Temporary redirect.
+* 304 Not Modified → Cached response.
+
+4xx – Client Errors
+* 400 Bad Request → Invalid request body, JSON wrong, missing headers.
+* 401 Unauthorized → No valid auth token.
+* 403 Forbidden → Access denied (IAM/API permissions or roles missing).
+* 404 Not Found → URL/route incorrect.
+* 405 Method Not Allowed → Wrong HTTP method (GET vs POST).
+* 408 Timeout → Client too slow.
+* 409 Conflict → Duplicate resource or version conflict.
+* 413 Payload Too Large → Upload body too big.
+* 429 Too Many Requests → Rate limit exceeded or throttling.
+
+5xx – Server Errors
+* 500 Internal Server Error → App crashed, bug in backend.
+* 501 Not Implemented → Feature not handled.
+* 502 Bad Gateway → ALB/Nginx got invalid response from backend.
+* 503 Service Unavailable → Service down or target group empty.
+* 504 Gateway Timeout → Backend taking too long or network blocked.
+
+AWS LOAD BALANCER (ALB/ELB) Errors
+* Target.FailedHealthChecks → App /health endpoint failing.
+* 502 – Bad Gateway → App crashed or wrong protocol.
+* 503 – No healthy targets → Target group empty.
+* 504 – Timeout → Backend slow.
+SRE INTERVIEW QUESTIONS:
+1. Explain SRE Principles
+2.What is SLA, SLO, SLA
+3.Monitoring
+4. Incident analysis
+5.RCA
+6.POstmoterms
+7. Working on Daily Reports, weekly Reports, Monthly Reports.
+8. what is incident, change, Problem.
+9. Explain any challenging issue which you have resolved.
+10. Have You done any deployments.
+11.what is observability
+ 
+ 1. Monitoring 
+Datadog (Event) >>> Slack (Alert)>> Monitor (Red, orange, Yellow) >> Impact is in High Level you need to Escalate to Developer with all Inputs
+ 
+Inputs: Triage steps (Findings)- Datadog, Errors Details (Grafana), Logs (Kibana, ELK) Etc.
+ 
+Errors: Exceptional Errors, Non-retryable Errors, back pressures, Null pointer Exceptional Errors.
+ 
+2. Incident analysis: (MTTA, MTTD, MTTR
+1.What time alert trigger
+2.What time action taken and troubleshooted
+3. Working reports as per requirements.
+4. Noise Reduction / Alerts Refinement.
+
+
+
+
+*Infosys interview questions:
+1. Introduce yourself.
+2. Which automation tool are you using for building and deploying pipelines?
+3. When building and deploying Docker images, which files do you need to check for prerequisites?
+4. Before starting the deployment, what pre-deployment checks do you perform for a particular application?
+5. Where have you created the YAML files? Are they stored locally or in GitHub repositories? If they are stored locally, how does your team access those files?
+6. Which Python version are you using for your application?
+7. Which Kubernetes version are you using? If you need to support multiple Kubernetes versions in the same YAML files, how do you define them?
+8. How many nodes are running in your EKS cluster?
+9. Do you have experience with EKS clusters? What responsibilities have you performed in EKS
+10. Explain the CI/CD process.
+11. After building and deploying a Docker image, how do you ensure it was built properly with all requirements?
+12. Which API are you using for your application?
+13. What commands have you used while deploying the application with kubectl?
+14. You built the image with version 3.11, but the building failed. What might be the reason, and how would you check and replace the versions?
+15. After deployment, how do you ensure it was successful? What post-deployment checks do you perform?
+16. How do you create workflows in GitHub Actions?
+17. Explain the deployment procedure and how a new image is built and applied.
+18. After deploying, if a new API workflow is added to the code, how do you configure and deploy it?
+19. How many services have been configured for your application?
+20. How many services are configured in your EKS cluster, and how do you manage all services together under the same cluster for all projects?
+21. If EKS Cluster V1 is running and you need to deploy V2, how do you build the image and deploy it? Explain the process.
+22. Have you performed cluster upgrades?
+23.Have you automated any processes in your project that were previously manual?
+24.Have you worked on cloud provisioning using CloudFormation or Terraform?
+25.Who writes the manifest YAML files, builds the images, and deploys them?
+26.When version or code changes occur, how do you automate the deployment process instead of doing it manually each time?
+27.How do you ensure your YAML file is working correctly?
+28.At the K8S cluster level, how do you monitor multiple services, and what key metrics do you monitor?
+29.At the project level, with multiple services and pods running, what key metrics do you check to ensure the application is functioning properly?
+30.When monitoring the application, what metrics do you see on the dashboard, and what are those metrics
+
+
