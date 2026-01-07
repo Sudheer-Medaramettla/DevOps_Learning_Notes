@@ -1,0 +1,52 @@
+✅ Types of Physical Server Providers
+
+IBM
+HP (Hewlett-Packard)
+Dell
+
+
+✅ Types of Cloud
+
+Public Cloud – Services offered over the public internet, shared across multiple customers.
+Private Cloud – Dedicated infrastructure for a single organization.
+Hybrid Cloud – Combination of public and private cloud environments.
+
+
+✅ Major Cloud Service Providers
+
+AWS (Amazon Web Services)
+Microsoft Azure
+Google Cloud Platform (GCP)
+
+
+✅ Key Differences Between Cloud Providers
+
+Implementation – How services are deployed and managed.
+Scalability – Ability to scale resources up/down efficiently.
+Performance – Speed, latency, and reliability of services.
+Security – Compliance, encryption, and identity management.
+
+
+✅ Google Cloud Platform (GCP) Overview
+
+Free Tier Account:
+
+Requires a credit card for signup.
+Includes limited free usage of GCP services.
+
+
+Enterprise Account:
+
+Designed for organizations using Google Workspace.
+Structure:
+Organization → Folder → Projects → Resources
+
+
+
+Free Account Structure:
+GCP → Free Account → Projects → GCP Services
+Enterprise Account Structure:
+GCP → Organization (Workspace) → Folder → Projects → Resources
+
+Link to create GCP Account:
+👉 https://cloud.google.com/free
