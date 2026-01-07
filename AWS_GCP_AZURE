@@ -1,0 +1,29 @@
+AWS	GCP	AZURE
+EC2	                Azure Virtual Machines	                             Compute Engine
+Auto Scaling	  Virtual Machine Scale Sets (VMSS)	                             Managed Instance Groups (MIGs)
+Lambda	                Azure Functions	                             Cloud Functions
+VPC	       Virtual Network (VNet)	                            VPC (Virtual Private Cloud)
+Subnet	       Subnet	                            Subnet
+Internet Gateway	       Internet Gateway	                            Cloud Internet Gateway
+NAT Gateway	       NAT Gateway	                            Cloud NAT
+Security Group	Network Security Group (NSG)	                            Firewall Rules
+Route Table	        Route Table	                            Routes
+S3	                       Blob Storage	                       Cloud Storage
+EBS	                       Managed Disks	                       Persistent Disk
+EFS	                       Azure Files	                       Filestore
+Glacier	                      Archive Storage	                      Archive Storage
+IAM	 Azure Active Directory (Entra ID) + RBAC	                       IAM
+IAM Roles	                   Managed Identities	                       Service Accounts
+Policies	                   Role Assignments	                       IAM Policies
+RDS	   Azure SQL / Azure Database	                                       Cloud SQL
+	          (MySQL, PostgreSQL)	
+Aurora	    Azure SQL Managed Instance	                                       AlloyDB
+DynamoDB	                  Cosmos DB	                                       Firestore / Bigtable
+EKS	              AKS (Azure Kubernetes Service)	                                    GKE (Google Kubernetes Engine)
+ECS	             Azure Container Apps	                                     Cloud Run
+ECR	             Azure Container Registry (ACR)	                                     Artifact Registry
+CloudWatch	    Azure Monitor	                                                              Cloud Monitoring
+CloudTrail	    Azure Activity Log	                                                              Cloud Audit Logs
+		
+		
+		
